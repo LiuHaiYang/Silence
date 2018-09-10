@@ -33,18 +33,18 @@ for f in glob.glob(os.path.join(faces_folder_path, "*.jpg")):
 # 1.人脸检测 
     dets = detector(img, 1) 
     print("Number of faces detected: {}".format(len(dets))) 
-    for k, d in enumerate(dets): 
+for k, d in enumerate(dets): 
 # 2.关键点检测 
-        shape = sp(img, d) 
+    shape = sp(img, d) 
 # 画出人脸区域和和关键点 
 # win.clear_overlay() 
 # win.add_overlay(d) 
 # win.add_overlay(shape) 
 # 3.描述子提取,128D向量 
-        face_descriptor = facerec.compute_face_descriptor(img, shape) 
+    face_descriptor = facerec.compute_face_descriptor(img, shape) 
 # 转换为numpy array 
-        v = numpy.array(face_descriptor) 
-        descriptors.append(v) 
+    v = numpy.array(face_descriptor) 
+    descriptors.append(v) 
 # 对需识别人脸进行同样处理 
 # 提取描述子,不再注释 
 img = io.imread(img_path) 
