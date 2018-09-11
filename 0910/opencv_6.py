@@ -13,7 +13,7 @@ fps = cap.get(cv2.cv.CV_CAP_PROP_FPS)
 size = (int(cap.get(cv2.cv.CV_CAP_PROP_FRAME_WIDTH)),int(cap.get(cv2.cv.CV_CAP_PROP_FRAME_HEIGHT)))
 fourcc = cv2.cv.CV_FOURCC('I','4','2','0')
 out = cv2.VideoWriter("./voide/output2.avi",fourcc, 5, size)
-print cap.isOpened()
+cap.isOpened()
 # 无限循环
 while ( True ) :
 # 获取视频及返回状态
@@ -39,9 +39,8 @@ while ( True ) :
     if cv2.waitKey(30) & 0xFF == ord('q') :
     	break
 # 关闭视频输出
-out.release()        
+out.release()
 # 释放摄像头
 cap.release()
 # 关闭所有窗口
 cv2.destroyAllWindows()
-

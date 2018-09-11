@@ -5,3 +5,4 @@
  - 0908 Twisted
  - 0909 face other
  - 0910 opencv learn
+ - 0911 opencv and pytesseract
