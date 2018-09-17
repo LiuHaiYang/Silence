@@ -6,3 +6,5 @@
  - 0909 face other
  - 0910 opencv learn
  - 0911 opencv and pytesseract
+ - 0916 image deal
+ - 0916 ai+ image data deal
