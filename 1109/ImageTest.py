@@ -7,7 +7,7 @@ headers = {
     "Accept-Encoding": "gzip, deflate, sdch",
     "Content-Type": "image/jpg",
     "aucode": "",
-    "type": 0,
+    "type": '0',
     "keycode": 'f1faa01a298522_',
 
 }
