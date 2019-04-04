@@ -1,0 +1,5 @@
+{% extends "admin/orm.html" %}
+
+{% block content_title %}
+sdfdsf
+{% endblock %}

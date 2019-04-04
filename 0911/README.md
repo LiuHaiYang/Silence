@@ -1,1 +1,0 @@
-#### interesting opencv and  pytesseract
